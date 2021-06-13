@@ -1,4 +1,27 @@
 ﻿<Properties StartupConfiguration="{007BD791-0627-4915-AC38-426BB4FD5374}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BlogLab" expanded="True">
+            <Node name="BlogLab.Repository" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="AccountRepository.cs" selected="True" />
+            </Node>
+            <Node name="BlogLab.Web" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.BlogLab.Repository FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.BlogLab.Web FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.BlogLab.Web PreferredExecutionTarget="/Applications/Safari.app" />
 </Properties>
