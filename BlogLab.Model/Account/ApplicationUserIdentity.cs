@@ -8,7 +8,7 @@ namespace BlogLab.Model.Account
 
     public string Username { get; set; }
 
-    public string MormalizedUsername { get; set; }
+    public string NormalizedUsername { get; set; }
 
     public string Email { get; set; }
 
