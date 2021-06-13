@@ -1,7 +1,7 @@
 ﻿using System;
 namespace BlogLab.Model.Blog
 {
-  public class Blog : BlogCreate
+  public class Blog : blogCreate
   {
     public string Username { get; set; }
 
