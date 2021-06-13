@@ -1,17 +1,14 @@
 ﻿<Properties StartupConfiguration="{007BD791-0627-4915-AC38-426BB4FD5374}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BlogLab.Repository/BlogRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BlogLab.Repository/BlogCommentRepository.cs">
     <Files>
-      <File FileName="BlogLab.Repository/BlogRepository.cs" Line="115" Column="57" />
+      <File FileName="BlogLab.Repository/BlogCommentRepository.cs" Line="42" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BlogLab" expanded="True">
-            <Node name="BlogLab.Model" expanded="True">
-              <Node name="Blog" expanded="True" />
-            </Node>
             <Node name="BlogLab.Repository" expanded="True">
-              <Node name="BlogRepository.cs" selected="True" />
+              <Node name="BlogCommentRepository.cs" selected="True" />
             </Node>
             <Node name="BlogLab.Web" expanded="True" />
           </Node>
