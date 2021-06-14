@@ -8,7 +8,7 @@ namespace BlogLab.Repository
   {
     public Task<Blog> UpsertAsync(BlogCreate blogcreate, int applicationUserId);
 
-    public Task<PagedResults<Blog>> GetAllSync(BlogPaging blogPaging);
+    public Task<PagedResults<Blog>> GetAllAsync(BlogPaging blogPaging);
 
     public Task<Blog> GetAsync(int blogId);
 

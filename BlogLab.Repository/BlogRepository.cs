@@ -69,7 +69,7 @@ namespace BlogLab.Repository
     }
 
 
-    public async Task<PagedResults<Blog>> GetAllSync(BlogPaging blogPaging)
+    public async Task<PagedResults<Blog>> GetAllAsync(BlogPaging blogPaging)
     {
       var results = new PagedResults<Blog>();
 
