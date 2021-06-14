@@ -61,6 +61,10 @@ BenchmarkDotNet.Artifacts/
 project.lock.json
 project.fragment.lock.json
 artifacts/
+**/appsettings.development.json
+**/appsettings.staging.json
+**/appsettings.production.json
+**/appsettings.json
 
 # ASP.NET Scaffolding
 ScaffoldingReadMe.txt
@@ -436,3 +440,4 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+.gitignore
