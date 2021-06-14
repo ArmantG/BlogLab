@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace BlogLab.Model.Account
+﻿namespace BlogLab.Model.Account
 {
   public class ApplicationUser
   {

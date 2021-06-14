@@ -1,5 +1,4 @@
-﻿using System;
-namespace BlogLab.Model.Settings
+﻿namespace BlogLab.Model.Settings
 {
   public class CloudinaryOptions
   {

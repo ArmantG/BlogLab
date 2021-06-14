@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace BlogLab.Model.Blog
+﻿namespace BlogLab.Model.Blog
 {
   public class BlogPaging
   {

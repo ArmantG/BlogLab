@@ -1,35 +1,18 @@
 ﻿<Properties StartupConfiguration="{007BD791-0627-4915-AC38-426BB4FD5374}|Default">
-  <MonoDevelop.Ide.ItemProperties.BlogLab.Identity FirstBuild="True" />
   <MonoDevelop.Ide.Workbench>
-    <Files>
-      <File FileName="BlogLab.Web/appsettings.json" Line="20" Column="6" />
-      <File FileName="BlogLab.Services/EmptyInterface.cs" Line="10" Column="1" />
-      <File FileName="BlogLab.Services/TokenService.cs" Line="36" Column="62" />
-    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="BlogLab" expanded="True">
-            <Node name="BlogLab.Model" expanded="True">
-              <Node name="Settings" expanded="True" />
-            </Node>
-            <Node name="BlogLab.Services" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" selected="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node name="BlogLab" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.BlogLab.Repository FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.BlogLab.Web PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.ItemProperties.BlogLab.Services FirstBuild="True" />
 </Properties>

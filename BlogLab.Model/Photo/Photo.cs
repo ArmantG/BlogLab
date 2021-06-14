@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace BlogLab.Model.Photo
 {
   public class Photo : PhotoCreate
