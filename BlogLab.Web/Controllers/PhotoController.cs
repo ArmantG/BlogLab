@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using System.IdentityModel.Tokens.Jwt;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BlogLab.Model.Photo;
@@ -8,100 +8,102 @@ using BlogLab.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using Microsoft.IdentityModel.JsonWebTokens;
 
 namespace BlogLab.Web.Controllers
 {
-  [Route("api/[controller]")]
-  [ApiController]
-  public class PhotoController : Controller
-  {
-    private readonly IPhotoRepository _photoRepository;
-    private readonly IBlogRepository _blogRepository;
-    private readonly IPhotoService _photoService;
-
-    public PhotoController(
-      IPhotoRepository photoRepository,
-      IBlogRepository blogRepository,
-      IPhotoService photoService)
+    [Route("api/[controller]")]
+    [ApiController]
+    public class PhotoController : ControllerBase
     {
-      _photoRepository = photoRepository;
-      _blogRepository = blogRepository;
-      _photoService = photoService;
-    }
+        private readonly IPhotoRepository _photoRepository;
+        private readonly IBlogRepository _blogRepository;
+        private readonly IPhotoService _photoService;
 
-    [Authorize]
-    [HttpPost]
-    public async Task<ActionResult<Photo>> UploadPhoto(IFormFile file)
-    {
-      int applicationUserId = int.Parse(User.Claims.First(i => i.Type == JwtRegisteredClaimNames.NameId).Value);
-
-      var uploadResult = await _photoService.AddPhotoAsync(file);
-
-      if (uploadResult.Error != null) return BadRequest(uploadResult.Error.Message);
-
-      var photoCreate = new PhotoCreate
-      {
-        PublicId = uploadResult.PublicId,
-        ImageUrl = uploadResult.SecureUrl.AbsoluteUri,
-        Description = file.FileName
-      };
-
-      var photo = await _photoRepository.InsertAsync(photoCreate, applicationUserId);
-
-      return Ok(photo);
-    }
-
-    [Authorize]
-    [HttpPost]
-    public async Task<ActionResult<List<Photo>>> GetByApplicationUserId()
-    {
-      int applicationUserId = int.Parse(User.Claims.First(i => i.Type == JwtRegisteredClaimNames.NameId).Value);
-
-      var photos = await _photoRepository.GetAllByUserIdAsync(applicationUserId);
-
-      return Ok(photos);
-    }
-
-    [HttpGet("{photoId}")]
-    public async Task<ActionResult<Photo>> Get(int photoId)
-    {
-      var photo = await _photoRepository.GetAsync(photoId);
-
-      return Ok(photo);
-    }
-
-    [Authorize]
-    [HttpDelete("{photoId}")]
-    public async Task<ActionResult<int>> Delete(int photoId)
-    {
-      int applicationUserId = int.Parse(User.Claims.First(i => i.Type == JwtRegisteredClaimNames.NameId).Value);
-
-      var foundPhoto = await _photoRepository.GetAsync(photoId);
-
-      if (foundPhoto != null)
-      {
-        if (foundPhoto.ApplicationUSerId == applicationUserId)
+        public PhotoController(
+            IPhotoRepository photoRepository,
+            IBlogRepository blogRepository,
+            IPhotoService photoService)
         {
-          var blogs = await _blogRepository.GetAllByUserIdAsync(applicationUserId);
-
-          var usedInBlog = blogs.Any(b => b.PhotoId == photoId);
-
-          if (usedInBlog) return BadRequest("Cannot remove photo as it it used in live blog.");
-
-          var deleteResult = await _photoService.DeletePhotoAsync(foundPhoto.PublicId);
-
-          if (deleteResult.Error != null) return BadRequest(deleteResult.Error.Message);
-
-          var affectedRows = await _photoRepository.DeleteAsync(foundPhoto.PhotoId);
+            _photoRepository = photoRepository;
+            _blogRepository = blogRepository;
+            _photoService = photoService;
         }
-        else
+
+        [Authorize]
+        [HttpPost]
+        public async Task<ActionResult<Photo>> UploadPhoto(IFormFile file)
         {
-          return BadRequest("Photo was not uploaded by the current user.");
+            int applicationUserId = int.Parse(User.Claims.First(i => i.Type == JwtRegisteredClaimNames.NameId).Value);
+
+            var uploadResult = await _photoService.AddPhotoAsync(file);
+
+            if (uploadResult.Error != null) return BadRequest(uploadResult.Error.Message);
+
+            var photoCreate = new PhotoCreate
+            {
+                PublicId = uploadResult.PublicId,
+                ImageUrl = uploadResult.SecureUrl.AbsoluteUri,
+                Description = file.FileName
+            };
+
+            var photo = await _photoRepository.InsertAsync(photoCreate, applicationUserId);
+
+            return Ok(photo);
         }
-      }
-      return BadRequest("Photo does not exist");
+
+        [Authorize]
+        [HttpGet]
+        public async Task<ActionResult<List<Photo>>> GetByApplicationUserId()
+        {
+            int applicationUserId = int.Parse(User.Claims.First(i => i.Type == JwtRegisteredClaimNames.NameId).Value);
+
+            var photos = await _photoRepository.GetAllByUserIdAsync(applicationUserId);
+
+            return Ok(photos);
+        }
+
+        [HttpGet("{photoId}")]
+        public async Task<ActionResult<Photo>> Get(int photoId)
+        {
+            var photo = await _photoRepository.GetAsync(photoId);
+
+            return Ok(photo);
+        }
+
+        [Authorize]
+        [HttpDelete("{photoId}")]
+        public async Task<ActionResult<int>> Delete(int photoId)
+        {
+            int applicationUserId = int.Parse(User.Claims.First(i => i.Type == JwtRegisteredClaimNames.NameId).Value);
+
+            var foundPhoto = await _photoRepository.GetAsync(photoId);
+
+            if (foundPhoto != null)
+            {
+                if (foundPhoto.ApplicationUserId == applicationUserId)
+                {
+                    var blogs = await _blogRepository.GetAllByUserIdAsync(applicationUserId);
+
+                    var usedInBlog = blogs.Any(b => b.PhotoId == photoId);
+
+                    if (usedInBlog) return BadRequest("Cannot remove photo as it is being used in published blog(s).");
+
+                    var deleteResult = await _photoService.DeletePhotoAsync(foundPhoto.PublicId);
+
+                    if (deleteResult.Error != null) return BadRequest(deleteResult.Error.Message);
+
+                    var affectedRows = await _photoRepository.DeleteAsync(foundPhoto.PhotoId);
+
+                    return Ok(affectedRows);
+                } 
+                else
+                {
+                    return BadRequest("Photo was not uploaded by the current user.");
+                }
+            }
+
+            return BadRequest("Photo does not exist.");
+        }
     }
-  }
 }

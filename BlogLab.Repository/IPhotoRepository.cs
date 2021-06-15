@@ -1,17 +1,19 @@
-﻿using System.Collections.Generic;
+﻿using BlogLab.Model.Photo;
+using System;
+using System.Collections.Generic;
+using System.Text;
 using System.Threading.Tasks;
-using BlogLab.Model.Photo;
 
 namespace BlogLab.Repository
 {
-  public interface IPhotoRepository
-  {
-    public Task<Photo> InsertAsync(PhotoCreate photoCreate, int applicationUserId);
+    public interface IPhotoRepository
+    {
+        public Task<Photo> InsertAsync(PhotoCreate photoCreate, int applicationUserId);
 
-    public Task<Photo> GetAsync(int photoId);
+        public Task<Photo> GetAsync(int photoId);
 
-    public Task<List<Photo>> GetAllByUserIdAsync(int applicationUserId);
+        public Task<List<Photo>> GetAllByUserIdAsync (int applicationUserId);
 
-    public Task<int> DeleteAsync(int photoId);
-  }
+        public Task<int> DeleteAsync(int photoId);
+    }
 }

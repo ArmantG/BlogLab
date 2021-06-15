@@ -1,15 +1,16 @@
 ﻿<Properties StartupConfiguration="{007BD791-0627-4915-AC38-426BB4FD5374}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BlogLab.Web/appsettings.json">
-    <Files>
-      <File FileName="BlogLab.Web/appsettings.json" Line="2" Column="9" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BlogLab" expanded="True">
             <Node name="BlogLab.Repository" expanded="True" />
-            <Node name="BlogLab.Services" expanded="True" />
-            <Node name="BlogLab.Web" expanded="True" />
+            <Node name="BlogLab.Services" expanded="True">
+              <Node name="IPhotoService.cs" selected="True" />
+            </Node>
+            <Node name="BlogLab.Web" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>

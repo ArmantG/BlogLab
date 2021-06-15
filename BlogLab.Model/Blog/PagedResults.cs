@@ -1,11 +1,13 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace BlogLab.Model.Blog
 {
-  public class PagedResults<T>
-  {
-    public IEnumerable<T> Items { get; set; }
+    public class PagedResults<T>
+    {
+        public IEnumerable<T> Items { get; set; }
 
-    public int TotalCount { get; set; }
-  }
+        public int TotalCount { get; set; }
+    }
 }

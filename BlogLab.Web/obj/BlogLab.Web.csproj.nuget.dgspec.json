@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "/Users/armant/Projects/BlogLab/BlogLab.Web/BlogLab.Web.csproj": {}
+    "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Web/BlogLab.Web.csproj": {}
   },
   "projects": {
-    "/Users/armant/Projects/BlogLab/BlogLab.Identity/BlogLab.Identity.csproj": {
+    "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Identity/BlogLab.Identity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/armant/Projects/BlogLab/BlogLab.Identity/BlogLab.Identity.csproj",
+        "projectUniqueName": "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Identity/BlogLab.Identity.csproj",
         "projectName": "BlogLab.Identity",
-        "projectPath": "/Users/armant/Projects/BlogLab/BlogLab.Identity/BlogLab.Identity.csproj",
+        "projectPath": "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Identity/BlogLab.Identity.csproj",
         "packagesPath": "/Users/armant/.nuget/packages/",
-        "outputPath": "/Users/armant/Projects/BlogLab/BlogLab.Identity/obj/",
+        "outputPath": "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Identity/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/armant/.config/NuGet/NuGet.Config"
+          "/Users/armant/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -29,11 +29,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/Users/armant/Projects/BlogLab/BlogLab.Model/BlogLab.Model.csproj": {
-                "projectPath": "/Users/armant/Projects/BlogLab/BlogLab.Model/BlogLab.Model.csproj"
+              "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Model/BlogLab.Model.csproj": {
+                "projectPath": "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Model/BlogLab.Model.csproj"
               },
-              "/Users/armant/Projects/BlogLab/BlogLab.Repository/BlogLab.Repository.csproj": {
-                "projectPath": "/Users/armant/Projects/BlogLab/BlogLab.Repository/BlogLab.Repository.csproj"
+              "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Repository/BlogLab.Repository.csproj": {
+                "projectPath": "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Repository/BlogLab.Repository.csproj"
               }
             }
           }
@@ -72,20 +72,20 @@
         }
       }
     },
-    "/Users/armant/Projects/BlogLab/BlogLab.Model/BlogLab.Model.csproj": {
+    "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Model/BlogLab.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/armant/Projects/BlogLab/BlogLab.Model/BlogLab.Model.csproj",
+        "projectUniqueName": "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Model/BlogLab.Model.csproj",
         "projectName": "BlogLab.Model",
-        "projectPath": "/Users/armant/Projects/BlogLab/BlogLab.Model/BlogLab.Model.csproj",
+        "projectPath": "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Model/BlogLab.Model.csproj",
         "packagesPath": "/Users/armant/.nuget/packages/",
-        "outputPath": "/Users/armant/Projects/BlogLab/BlogLab.Model/obj/",
+        "outputPath": "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Model/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/armant/.config/NuGet/NuGet.Config"
+          "/Users/armant/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -133,20 +133,20 @@
         }
       }
     },
-    "/Users/armant/Projects/BlogLab/BlogLab.Repository/BlogLab.Repository.csproj": {
+    "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Repository/BlogLab.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/armant/Projects/BlogLab/BlogLab.Repository/BlogLab.Repository.csproj",
+        "projectUniqueName": "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Repository/BlogLab.Repository.csproj",
         "projectName": "BlogLab.Repository",
-        "projectPath": "/Users/armant/Projects/BlogLab/BlogLab.Repository/BlogLab.Repository.csproj",
+        "projectPath": "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Repository/BlogLab.Repository.csproj",
         "packagesPath": "/Users/armant/.nuget/packages/",
-        "outputPath": "/Users/armant/Projects/BlogLab/BlogLab.Repository/obj/",
+        "outputPath": "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Repository/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/armant/.config/NuGet/NuGet.Config"
+          "/Users/armant/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -158,8 +158,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/Users/armant/Projects/BlogLab/BlogLab.Model/BlogLab.Model.csproj": {
-                "projectPath": "/Users/armant/Projects/BlogLab/BlogLab.Model/BlogLab.Model.csproj"
+              "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Model/BlogLab.Model.csproj": {
+                "projectPath": "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Model/BlogLab.Model.csproj"
               }
             }
           }
@@ -176,15 +176,11 @@
           "dependencies": {
             "Dapper": {
               "target": "Package",
-              "version": "[2.0.90, )"
-            },
-            "Microsoft.Extensions.Configuration": {
-              "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[2.0.35, )"
             },
             "Microsoft.Extensions.Identity.Core": {
               "target": "Package",
-              "version": "[5.0.7, )"
+              "version": "[3.1.9, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
@@ -210,20 +206,20 @@
         }
       }
     },
-    "/Users/armant/Projects/BlogLab/BlogLab.Services/BlogLab.Services.csproj": {
+    "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Services/BlogLab.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/armant/Projects/BlogLab/BlogLab.Services/BlogLab.Services.csproj",
+        "projectUniqueName": "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Services/BlogLab.Services.csproj",
         "projectName": "BlogLab.Services",
-        "projectPath": "/Users/armant/Projects/BlogLab/BlogLab.Services/BlogLab.Services.csproj",
+        "projectPath": "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Services/BlogLab.Services.csproj",
         "packagesPath": "/Users/armant/.nuget/packages/",
-        "outputPath": "/Users/armant/Projects/BlogLab/BlogLab.Services/obj/",
+        "outputPath": "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Services/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/armant/.config/NuGet/NuGet.Config"
+          "/Users/armant/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -235,8 +231,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/Users/armant/Projects/BlogLab/BlogLab.Model/BlogLab.Model.csproj": {
-                "projectPath": "/Users/armant/Projects/BlogLab/BlogLab.Model/BlogLab.Model.csproj"
+              "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Model/BlogLab.Model.csproj": {
+                "projectPath": "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Model/BlogLab.Model.csproj"
               }
             }
           }
@@ -258,6 +254,10 @@
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[5.0.7, )"
             },
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
@@ -287,20 +287,20 @@
         }
       }
     },
-    "/Users/armant/Projects/BlogLab/BlogLab.Web/BlogLab.Web.csproj": {
+    "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Web/BlogLab.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/armant/Projects/BlogLab/BlogLab.Web/BlogLab.Web.csproj",
+        "projectUniqueName": "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Web/BlogLab.Web.csproj",
         "projectName": "BlogLab.Web",
-        "projectPath": "/Users/armant/Projects/BlogLab/BlogLab.Web/BlogLab.Web.csproj",
+        "projectPath": "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Web/BlogLab.Web.csproj",
         "packagesPath": "/Users/armant/.nuget/packages/",
-        "outputPath": "/Users/armant/Projects/BlogLab/BlogLab.Web/obj/",
+        "outputPath": "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Web/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/armant/.config/NuGet/NuGet.Config"
+          "/Users/armant/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -312,17 +312,17 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/Users/armant/Projects/BlogLab/BlogLab.Identity/BlogLab.Identity.csproj": {
-                "projectPath": "/Users/armant/Projects/BlogLab/BlogLab.Identity/BlogLab.Identity.csproj"
+              "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Identity/BlogLab.Identity.csproj": {
+                "projectPath": "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Identity/BlogLab.Identity.csproj"
               },
-              "/Users/armant/Projects/BlogLab/BlogLab.Model/BlogLab.Model.csproj": {
-                "projectPath": "/Users/armant/Projects/BlogLab/BlogLab.Model/BlogLab.Model.csproj"
+              "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Model/BlogLab.Model.csproj": {
+                "projectPath": "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Model/BlogLab.Model.csproj"
               },
-              "/Users/armant/Projects/BlogLab/BlogLab.Repository/BlogLab.Repository.csproj": {
-                "projectPath": "/Users/armant/Projects/BlogLab/BlogLab.Repository/BlogLab.Repository.csproj"
+              "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Repository/BlogLab.Repository.csproj": {
+                "projectPath": "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Repository/BlogLab.Repository.csproj"
               },
-              "/Users/armant/Projects/BlogLab/BlogLab.Services/BlogLab.Services.csproj": {
-                "projectPath": "/Users/armant/Projects/BlogLab/BlogLab.Services/BlogLab.Services.csproj"
+              "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Services/BlogLab.Services.csproj": {
+                "projectPath": "/Users/armant/Prog_Projects/Projects/BlogLab/BlogLab.Services/BlogLab.Services.csproj"
               }
             }
           }
